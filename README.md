@@ -24,29 +24,5 @@ A modern, object-oriented C++ implementation of a singly linked list. This proje
 
 ## 🧱 Class Structure
 
-```cpp
-class Node {
-public:
-    int data;
-    Node* next;
-};
 
-class SinglyLinkedList {
-private:
-    Node* head;
-    int size;
-
-public:
-    SinglyLinkedList();                         // Default constructor
-    SinglyLinkedList(const SinglyLinkedList&);  // Copy constructor
-    SinglyLinkedList(SinglyLinkedList&&);       // Move constructor
-    ~SinglyLinkedList();                        // Destructor
-
-    void insertAtHead(int value);
-    void insertAtTail(int value);
-    void insertAt(int index, int value);
-    void removeAt(int index);
-    void clear();
-    void print() const;
-};
 
