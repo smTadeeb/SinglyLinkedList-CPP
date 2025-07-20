@@ -23,6 +23,80 @@ A modern, object-oriented C++ implementation of a singly linked list. This proje
 ---
 
 ## 🧱 Class Structure
+```
+namespace TadeebDS
+{
+class SinglyLinkedList
+{
+private:
+class Node
+{
+private:
+Node *next;
+int num;
+Node(int num)
+{
+//Some-code
+}
+friend class SinglyLinkedList;
+};
+Node *top, *bottom;
+int size;
+
+public:
+
+SinglyLinkedList()
+{
+//Some-code
+}
+
+SinglyLinkedList(const SinglyLinkedList &other)
+{
+//Some-code
+}
+
+SinglyLinkedList(SinglyLinkedList &&other)
+{
+//Some-code
+}
+
+void add(int num)
+{
+//Some-code
+}
+
+void insertAtTop(int num)
+{
+//Some-code
+}
+
+void insertAt(int pos, int num)
+{
+//Some-code
+}
+
+int get(int index)
+{
+//Some-code
+}
+
+int getSize()
+{
+//Some-code
+}
+
+void removeAt(int index)
+{
+//Some-code
+}
+
+void clearAll()
+{
+//Some-code
+}
+};
+};
+```
 
 
 
