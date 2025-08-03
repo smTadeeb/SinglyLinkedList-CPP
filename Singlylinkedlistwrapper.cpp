@@ -56,6 +56,12 @@ other.bottom=NULL;
 other.size=0;
 }
 
+~SinglyLinkedList()
+{
+cout<<"Object is about to die !!! "<<endl;
+this->clearAll();
+}
+
 void add(int num)
 {
 Node *t;
